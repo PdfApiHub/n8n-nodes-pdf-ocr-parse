@@ -1,37 +1,53 @@
 # n8n-nodes-pdf-ocr-parse
 
-> Extract text from scanned PDF documents using OCR powered by PDF API Hub
+[![NPM Version](https://img.shields.io/npm/v/n8n-nodes-pdf-ocr-parse.svg)](https://www.npmjs.com/package/n8n-nodes-pdf-ocr-parse)
+[![License](https://img.shields.io/npm/l/n8n-nodes-pdf-ocr-parse.svg)](LICENSE.md)
 
-This is an [n8n](https://n8n.io/) community node. It lets you use **[PDF API Hub](https://pdfapihub.com)** in your n8n workflows.
+> Extract text from scanned PDF documents using OCR — supports multiple languages and advanced tuning.
 
-## Prerequisites
+This is an [n8n](https://n8n.io/) community node powered by **[PDF API Hub](https://pdfapihub.com)**.
 
-- **n8n** v1.0.0 or later
-- A **PDF API Hub** API key — [get one free](https://pdfapihub.com)
+---
 
-## Installation
+## 🚀 Install
 
-1. Go to **Settings → Community Nodes**
-2. Select **Install a community node**
-3. Enter `n8n-nodes-pdf-ocr-parse`
-4. Agree to the risks and click **Install**
+1. Go to **Settings → Community Nodes** in n8n
+2. Enter `n8n-nodes-pdf-ocr-parse`
+3. Click **Install**
 
-## Operations
+## 🔑 Setup
 
-- **PDF OCR** — Extract text from scanned PDF documents using OCR powered by PDF API Hub
+Sign up at [pdfapihub.com](https://pdfapihub.com) → copy your API key → add to n8n credentials.
 
-## Credentials
+---
 
-You need a PDF API Hub API key to use this node:
+## ✨ Features
 
-1. Sign up at [pdfapihub.com](https://pdfapihub.com)
-2. Copy your API key from the dashboard
-3. In n8n, create new **PDF API Hub API** credentials and paste your key
+| Parameter | Description |
+|-----------|-------------|
+| **Input Type** | URL or Binary file |
+| **Pages** | `all` or specific ranges like `1-3,5` |
+| **Language** | English, Portuguese, Russian — or combine with `+` (e.g. `eng+por`) |
+| **Detail Level** | **Text** (plain text) or **Words** (with bounding box coordinates) |
+| **Output Format** | JSON or plain Text |
 
-## Resources
+### Advanced Options
 
-- [PDF API Hub Documentation](https://pdfapihub.com/docs)
-- [n8n Community Nodes Documentation](https://docs.n8n.io/integrations/community-nodes/)
+| Option | Description |
+|--------|-------------|
+| **DPI** | Resolution for OCR processing (72–400) |
+| **Character Whitelist** | Restrict to specific characters (e.g. `0123456789`) |
+| **PSM** | Page segmentation mode (auto, single block, single line, etc.) |
+| **OEM** | OCR engine mode (legacy, LSTM, or combined) |
+
+---
+
+## 💡 Use Cases
+
+- **Digitize archives** — OCR scanned contracts, letters, and records
+- **Receipt processing** — extract amounts from scanned receipts
+- **Form digitization** — read data from scanned paper forms
+- **Legacy documents** — make old scanned PDFs searchable
 
 ## License
 
