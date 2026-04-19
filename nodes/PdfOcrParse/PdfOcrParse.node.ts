@@ -11,7 +11,7 @@ export class PdfOcrParse implements INodeType {
 	description: INodeTypeDescription = {
 		displayName: 'PDF OCR',
 		name: 'pdfOcrParse',
-		icon: { light: 'file:../../icons/icon.svg', dark: 'file:../../icons/icon.svg' },
+		icon: { light: 'file:../../icons/light.svg', dark: 'file:../../icons/dark.svg' },
 		group: ['transform'],
 		version: 1,
 		description: 'Extract text from scanned PDF documents using OCR powered by PDF API Hub',
